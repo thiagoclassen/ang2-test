@@ -1,0 +1,16 @@
+<div (click)="showTasks(project.id)" class="col-lg-10 col-lg-offset-2" *ngFor="let project of projects" style="display:block">
+    <h1>================================</h1>
+    <p>{{project.id}} -- {{project.name}}</p>
+    <h1>================================</h1>
+    <!--<div>
+        <div *ngFor="let task of filteredTasks.filtered" *ngIf="task.projectId == filteredTasks.parentId" class="block col-lg-10 col-lg-offset-2" style="border: 3px dotted red">
+            <h1>ID: {{task.id}}</h1>
+            <h1>Title: {{task.title}}</h1>
+            <h1>Desc: {{task.description}}</h1>
+            <h1>Estimativa: {{task.estimate}}</h1>
+            <h1>Projeto: {{task.projectId}}</h1>
+            <h1>User: {{task.trecoUserId}}</h1>
+            <h1>Status: {{task.statusId}}</h1>
+        </div>
+    </div>-->
+</div>

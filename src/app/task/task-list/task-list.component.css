@@ -1,0 +1,5 @@
+.block {
+    border: 3px dotted slategray;
+    margin: 5px;
+    display: block;
+}

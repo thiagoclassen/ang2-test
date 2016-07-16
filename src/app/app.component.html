@@ -1,3 +1,32 @@
-<h1>
-  {{title}}
-</h1>
+<div style="heigth:100%">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">My Project . . .</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a [routerLink]="['/addUser']" routerLinkActive="active">Adicionar User</a></li>
+          <li><a [routerLink]="['/addProject']" routerLinkActive="active">Projeto</a></li>
+          <li><a [routerLink]="['/addTask']" routerLinkActive="active">Task</a></li>
+          <li><a [routerLink]="['/taskList']" routerLinkActive="active">Task List</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--<div>
+    <nav>
+        <a [routerLink]="['/tasks']" routerLinkActive="active">TASKS</a>
+        <a [routerLink]="['/task']" routerLinkActive="active">NEW</a>
+    </nav>
+</div>-->
+
+  <div class="content-section">
+    <router-outlet></router-outlet>
+    <!--<app-contact-list></app-contact-list>-->
+  </div>
+</div>
+
+
